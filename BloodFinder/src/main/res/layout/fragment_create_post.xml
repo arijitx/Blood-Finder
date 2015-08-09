@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#D53C3C"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bloodfinder.CreatePost$PlaceholderFragment">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPostMobile"
+        android:layout_marginTop="60dp"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="Mobile"
+        android:drawableLeft="@drawable/mobile_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etDesc"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="90dp"
+        android:hint="Description"
+        android:lines="3"
+
+        android:layout_below="@+id/etHeading"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etHeading"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="Heading"
+        android:drawableLeft="@drawable/mobile_icon"
+         />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPostBlood"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Blood Group"
+        android:drawableLeft="@drawable/drop_icon"
+        android:layout_below="@+id/etDesc"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Post"
+        android:id="@+id/btnCreatePost"
+        android:background="#2DAB37"
+        android:width="400dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbUrgency"
+        android:layout_above="@+id/btnCreatePost"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgency"
+        android:textSize="40dp"
+        android:id="@+id/textView"
+        android:layout_above="@+id/rbUrgency"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

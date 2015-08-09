@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#D53C3C"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bloodfinder.SignUp$PlaceholderFragment">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNewName"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="Name"
+        android:drawableLeft="@drawable/user_icon"
+        android:layout_below="@+id/etNewName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNewMobile"
+        android:layout_marginTop="26dp"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="Mobile Number"
+        android:drawableLeft="@drawable/mobile_icon"
+        android:layout_below="@+id/etNewName"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etBlood"
+        android:layout_marginTop="25dp"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="Blood Group"
+        android:drawableLeft="@drawable/drop_icon"
+        android:layout_below="@+id/etNewMobile"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDob"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="06/06/06"
+        android:drawableLeft="@drawable/drop_icon"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/etBlood" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNewPass"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="Password"
+        android:password="true"
+        android:drawableLeft="@drawable/drop_icon"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/etDob" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="#2DAB37"
+        android:id="@+id/btnSignUp"
+        android:width="400dp"
+        android:layout_marginTop="63dp"
+
+        android:layout_below="@+id/etNewPass"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

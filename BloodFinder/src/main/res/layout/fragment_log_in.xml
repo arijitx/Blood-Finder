@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D53C3C"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bloodfinder.LogIn$PlaceholderFragment">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMobile"
+        android:layout_marginTop="106dp"
+        android:width="400dp"
+        android:background="#fff"
+        android:height="40dp"
+        android:hint="Mobile Number"
+        android:drawableLeft="@drawable/mobile_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPass"
+        android:width="400dp"
+        android:background="#fff"
+        android:hint="Password"
+        android:height="40dp"
+        android:layout_below="@+id/etMobile"
+        android:drawableLeft="@drawable/pass_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:password="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:background="#2DAB37"
+        android:id="@+id/btnSignIn"
+        android:width="400dp"
+        android:layout_below="@+id/etPass"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up For BloodFinder"
+        android:id="@+id/tvSignUp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+
+
+
+</RelativeLayout>
